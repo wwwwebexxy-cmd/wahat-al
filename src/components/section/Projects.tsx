@@ -62,12 +62,12 @@ export default function Projects() {
       <Container>
         <div className={styles.header}>
           <Reveal>
-            <SectionTitle eyebrow="OUR PROJECTS" title="A GLIMPSE OF OUR WORK" />
+            <SectionTitle eyebrow="PROJECT TYPES" title="WORK WE SUPPORT" />
           </Reveal>
           <Reveal delay={200}>
             <div className={styles.introText}>
-              <p>Explore some of our completed work across residential, commercial, interior, fit-out and outdoor environments.</p>
-              <p>Our project portfolio includes villas, interiors, supermarkets, restaurants, offices, landscaping, fitness spaces and other completed works.</p>
+              <p>Explore the residential, commercial, interior and outdoor project types we support across Dubai.</p>
+              <p>Each requirement is reviewed against the property, agreed scope and site conditions.</p>
             </div>
           </Reveal>
         </div>
@@ -92,16 +92,15 @@ export default function Projects() {
                     <div className={styles.slideCard}>
                       <div 
                         className={styles.slideImage} 
-                        style={{ backgroundImage: `url('${slide.image || 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80'}')` }}
+                        style={{ backgroundImage: `url('${slide.image}')` }}
                       >
-                         {/* Fallback image from Unsplash for placeholder */}
                       </div>
                       <div className={styles.slideContent}>
                         <h3 className={styles.slideTitle}>{slide.title}</h3>
                         <p className={styles.slideDesc}>{slide.description}</p>
                         <div className={styles.slideAction}>
                           <Button onClick={() => slide.image && setSelectedImage(slide.image)} variant="primary">
-                            VIEW PROJECT
+                            VIEW EXAMPLE
                           </Button>
                         </div>
                       </div>

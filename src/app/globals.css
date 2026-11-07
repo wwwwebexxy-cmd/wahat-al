@@ -1,11 +1,11 @@
 
 :root {
-  /* Core Brand Colors derived from standard Architectural/Design palettes */
-  --color-parchment: #f4f0ec; /* Warm off-white background */
-  --color-ink: #72451d; /* Deep brown for text and dark sections */
-  --color-brass: #be995c; /* Premium gold/brass for buttons, accents, and lines */
-  --color-brass-light: #d3c3b0; /* Lighter brass for hover states */
-  --color-sand: #e6ddd2; /* Slight variation of parchment for alternating sections */
+  /* Wahat Al Daqa colors from the supplied logo */
+  --color-surface: #f7f9fc;
+  --color-navy: #082b63;
+  --color-accent: #1597ed;
+  --color-accent-light: #76c3f5;
+  --color-surface-alt: #eaf3fb;
   
   /* Typography */
   --font-display: "var(--font-fraunces)", serif;
@@ -27,8 +27,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-parchment);
-  color: var(--color-ink);
+  background-color: var(--color-surface);
+  color: var(--color-navy);
   font-feature-settings: "ss01" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,23 +40,23 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #72451d; /* ink */
+  background: var(--color-navy);
 }
 ::-webkit-scrollbar-thumb {
-  background: #be995c; /* brass */
+  background: var(--color-accent);
   border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d3c3b0; /* brass-light */
+  background: var(--color-accent-light);
 }
 
 ::selection {
-  background-color: #be995c; /* brass */
-  color: #f4f0ec; /* parchment */
+  background-color: var(--color-accent);
+  color: var(--color-surface);
 }
 
 :focus-visible {
-  outline: 2px solid #be995c; /* brass */
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 

@@ -10,14 +10,14 @@ export default function Footer() {
           {/* Brand */}
           <div className={styles.brandSection}>
             <div className={styles.logoContainer}>
-              <img src="/images/alejaba_logo_200x200.png" alt="Al Ejaba Logo" className={styles.logoImg} />
+              <img src="/images/wad-logo.webp" alt="Wahat Al Daqa Technical Services" className={styles.logoImg} />
               <div className={styles.logoText}>
-                <div className={styles.brandTitle}>AL EJABA AL SAREEA</div>
-                <p className={styles.legalName}>TECHNICAL SERVICES L.L.C.</p>
+                <div className={styles.brandTitle}>{site.name}</div>
+                <p className={styles.brandLegalName}>TECHNICAL SERVICES L.L.C.</p>
               </div>
             </div>
             <p className={styles.tagline}>
-              General Maintenance | Interior Design | Decoration | Turnkey Fit-Out Solutions
+              BUILD. IMPROVE. MAINTAIN.
             </p>
           </div>
 
@@ -35,20 +35,25 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Associate Company */}
-          <div className={styles.associateContainer}>
-            <div className={styles.heading}>OUR ASSOCIATE COMPANY</div>
-            <img
-              src="/images/our-associate-company.png"
-              alt="Our Associate Company"
-              className={styles.associateImg}
-            />
+          {/* Service area and contact */}
+          <div className={styles.serviceArea}>
+            <div className={styles.heading}>SERVICE AREA & CONTACT</div>
+            <p className={styles.legalName}>{site.address}</p>
+            <a className={styles.footerContactLink} href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer">
+              WhatsApp: {site.phone}
+            </a>
+            <a className={styles.footerContactLink} href={`mailto:${site.email}`}>
+              {site.email}
+            </a>
+            <a className={styles.footerContactLink} href={site.url}>
+              {site.url.replace(/^https?:\/\//, "")}
+            </a>
           </div>
         </div>
 
         <div className={styles.bottomBar}>
           <span>
-            © 2026 Al Ejaba Al Sareea Technical Services L.L.C. All Rights Reserved.
+            &copy; {new Date().getFullYear()} {site.legalName}. All Rights Reserved.
           </span>
         </div>
       </Container>

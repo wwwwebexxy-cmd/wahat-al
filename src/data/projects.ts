@@ -2,39 +2,45 @@ import { CarouselSlide } from "@/types";
 
 export const carouselSlides: CarouselSlide[] = [
   {
-    id: "residential",
-    title: "RESIDENTIAL PROJECTS",
-    description: "Villas, extensions, interiors and outdoor spaces designed and completed around client requirements.",
-    image: "/images/our-project1.png", // Added by user
+    id: "villa-home",
+    title: "VILLA & HOME IMPROVEMENTS",
+    description:
+      "Maintenance, renovation, painting, flooring, kitchens and interior improvements.",
+    image: "/images/wad-villa-exterior.webp",
   },
   {
-    id: "fitout",
-    title: "INTERIOR FIT-OUT",
-    description: "Interior refurbishment and fit-out works for residential and commercial spaces.",
-    image: "/images/our-project2.png", // Added by user
+    id: "interior-fitout",
+    title: "INTERIOR & FIT-OUT",
+    description:
+      "Interior improvement and fit-out requirements for homes and commercial spaces.",
+    image: "/images/wad-living-room.webp",
   },
   {
-    id: "commercial",
-    title: "COMMERCIAL SPACES",
-    description: "Professional solutions for offices, retail outlets, supermarkets and commercial environments.",
-    image: "/images/our-project3.jpg", // Placeholder
+    id: "office-commercial",
+    title: "OFFICE & COMMERCIAL SPACES",
+    description:
+      "Partitions, ceilings, flooring, painting and technical works for business premises.",
+    image: "/images/wad-office-interior.webp",
   },
   {
-    id: "restaurants",
-    title: "RESTAURANTS & CAFETERIAS",
-    description: "Interior fit-out and kitchen-related works for food-service environments.",
-    image: "/images/our-project4.jpg", // Placeholder
+    id: "kitchens-carpentry",
+    title: "KITCHENS & CARPENTRY",
+    description:
+      "Modular kitchens, cabinets, storage and custom carpentry for your space.",
+    image: "/images/wad-modular-kitchen.webp",
   },
   {
-    id: "landscaping",
-    title: "LANDSCAPING & OUTDOOR",
-    description: "Landscaping, swimming pool areas, play areas, parking and outdoor improvement works.",
-    image: "/images/our-project5.jpg", // Placeholder
+    id: "fabrication-structures",
+    title: "FABRICATION & STRUCTURES",
+    description:
+      "Pergolas, gates, car parking structures, grills and customized steel works.",
+    image: "/images/wad-steel-pergola.webp",
   },
   {
-    id: "maintenance",
-    title: "MAINTENANCE & TECHNICAL WORKS",
-    description: "Maintenance and technical solutions supporting residential, commercial and other property requirements.",
-    image: "/images/our-project6.jpg", // Placeholder
+    id: "outdoor-improvements",
+    title: "OUTDOOR IMPROVEMENTS",
+    description:
+      "Interlock, landscaping, paving and outdoor improvements for villas and commercial properties.",
+    image: "/images/wad-landscaping.webp",
   },
 ];

@@ -27,15 +27,15 @@ export default function About() {
             <Reveal delay={200}>
               <div className={styles.content}>
                 <p className={styles.statement}>
-                  Building Better Spaces Through Experience & Expertise
+                  Your Property. Our Solution.
                 </p>
                 
                 <p className={styles.paragraph}>
-                  Al Ejaba Al Sareea Technical Services L.L.C. is a professional technical services and interior design company with a portfolio of successful projects in the Middle East. Our experience and passion for creativity give us the skills to meet and exceed our clients&apos; expectations.
+                  Wahat Al Daqa Technical Services L.L.C. provides property maintenance, renovation, interior, fabrication and technical services for villas, apartments, offices, shops and commercial properties across Dubai.
                 </p>
 
                 <p className={styles.paragraph}>
-                  We bring our clients&apos; imagination to life through design, technical consultation and skilled workmanship. Our approach is built around strong relationships, innovative solutions and quality work delivered with attention to budget requirements.
+                  From a single repair to a complete property improvement project, we provide practical solutions with professional workmanship, clear communication and attention to quality and finishing.
                 </p>
               </div>
             </Reveal>
@@ -44,20 +44,20 @@ export default function About() {
             <Reveal delay={400}>
               <div className={styles.featuresGrid}>
                 <div>
-                  <div className={styles.featureNum}>EXPERIENCE</div>
-                  <p className={styles.featureDesc}>A portfolio of successful projects across different property and project types.</p>
+                  <div className={styles.featureNum}>RESIDENTIAL</div>
+                  <p className={styles.featureDesc}>Maintenance and improvement for villas, apartments, homes and rental properties.</p>
                 </div>
                 <div>
-                  <div className={styles.featureNum}>CREATIVITY</div>
-                  <p className={styles.featureDesc}>Transforming client ideas and imagination into practical spaces.</p>
+                  <div className={styles.featureNum}>COMMERCIAL</div>
+                  <p className={styles.featureDesc}>Technical and interior services for offices, shops and commercial properties.</p>
                 </div>
                 <div>
-                  <div className={styles.featureNum}>SKILLED TEAM</div>
-                  <p className={styles.featureDesc}>Experienced teams for technical, interior and maintenance requirements.</p>
+                  <div className={styles.featureNum}>QUALITY WORK</div>
+                  <p className={styles.featureDesc}>Professional workmanship and attention to quality and finishing.</p>
                 </div>
                 <div>
-                  <div className={styles.featureNum}>RELIABLE SUPPORT</div>
-                  <p className={styles.featureDesc}>Dedicated maintenance and facility-management support after project completion.</p>
+                  <div className={styles.featureNum}>CLEAR COMMUNICATION</div>
+                  <p className={styles.featureDesc}>Practical solutions and clear communication throughout the work.</p>
                 </div>
               </div>
             </Reveal>

@@ -14,30 +14,30 @@
 }
 
 .primary {
-  background-color: var(--color-brass);
-  color: var(--color-ink);
+  background-color: var(--color-accent);
+  color: var(--color-navy);
 }
 
 .primary:hover {
-  background-color: var(--color-brass-light);
+  background-color: var(--color-accent-light);
 }
 
 .outline {
   background-color: transparent;
-  border: 1px solid color-mix(in srgb, var(--color-brass) 50%, transparent);
-  color: var(--color-parchment);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 50%, transparent);
+  color: var(--color-surface);
 }
 
 .outline:hover {
-  border-color: var(--color-brass);
-  background-color: color-mix(in srgb, var(--color-brass) 10%, transparent);
+  border-color: var(--color-accent);
+  background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
 }
 
 .ghost {
   background-color: transparent;
-  color: var(--color-ink);
+  color: var(--color-navy);
 }
 
 .ghost:hover {
-  color: var(--color-brass);
+  color: var(--color-accent);
 }

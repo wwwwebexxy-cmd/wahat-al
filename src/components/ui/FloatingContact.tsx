@@ -6,7 +6,7 @@ export default function FloatingContact() {
   return (
     <div className={styles.container}>
       <a
-        href={`tel:${site.phone2.replace(/\s+/g, '')}`}
+        href={`tel:${site.phone.replace(/\s+/g, '')}`}
         className={`${styles.button} ${styles.phoneBtn}`}
         aria-label="Call us"
         target="_blank"

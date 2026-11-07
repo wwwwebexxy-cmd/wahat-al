@@ -14,9 +14,9 @@ export default function Services() {
           </Reveal>
           <Reveal delay={200}>
             <div className={styles.introText}>
-              <p className={styles.subtitle}>Complete Solutions. One Professional Team.</p>
+              <p className={styles.subtitle}>Complete Property Solutions Under One Roof.</p>
               <p className={styles.description}>
-                We provide a wide range of technical, interior, maintenance and fit-out services for residential and commercial requirements.
+                Whether you are improving a home, preparing a rental property, upgrading an office or arranging ongoing maintenance, we can help with a wide range of property services across Dubai.
               </p>
             </div>
           </Reveal>

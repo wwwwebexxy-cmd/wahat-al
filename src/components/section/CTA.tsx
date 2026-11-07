@@ -11,17 +11,17 @@ export default function CTA() {
         <Reveal>
           <div className={styles.eyebrow}>READY TO START YOUR PROJECT?</div>
           <h2 className={styles.title}>
-            LET&apos;S TURN YOUR IDEA INTO REALITY.
+            HAVE A PROJECT IN MIND?
           </h2>
         </Reveal>
         
         <Reveal delay={200}>
           <div className={styles.description}>
             <p>
-              Whether you are planning an interior transformation, fit-out project, maintenance work, landscaping project or technical service requirement, Al Ejaba Al Sareea is ready to help.
+              Tell us what you need. We can review your requirement and contact you about the next steps.
             </p>
             <p>
-              We bring together design, technical expertise and skilled workmanship to deliver solutions built around your requirements.
+              From a small repair to a complete property improvement, we aim to provide dependable service and quality workmanship.
             </p>
           </div>
         </Reveal>
@@ -29,7 +29,7 @@ export default function CTA() {
         <Reveal delay={400}>
           <div className={styles.actions}>
             <Button href="#contact" variant="primary">
-              GET IN TOUCH
+              REQUEST A QUOTATION
             </Button>
             <Button href="#services" variant="outline">
               EXPLORE OUR SERVICES
@@ -39,7 +39,7 @@ export default function CTA() {
 
         <Reveal delay={600}>
           <div className={styles.shortCta}>
-            Have a project in mind? Let&apos;s discuss it.
+            BUILD. IMPROVE. MAINTAIN.
           </div>
         </Reveal>
       </Container>

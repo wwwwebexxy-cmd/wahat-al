@@ -31,8 +31,7 @@ export default function Contact() {
             <div className={styles.introText}>
               <p className={styles.subtitle}>LET&apos;S WORK TOGETHER</p>
               <p className={styles.description}>
-                Let&apos;s discuss your requirements and find the right
-                technical or interior solution for your project.
+                Tell us what you need. Our team will review your requirement and contact you about the next steps.
               </p>
             </div>
           </Reveal>
@@ -63,20 +62,20 @@ export default function Contact() {
                   <Icon path="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </span>
                 <div>
-                  <div className={styles.cardLabel}>CALL US</div>
+                  <div className={styles.cardLabel}>CALL / WHATSAPP</div>
                   <div className={styles.cardValue}>
                     <div className={styles.contactRow}>
-                      <span className={styles.contactLabel}>Office Number</span>
-                      <a href={`tel:${site.phone2.replace(/\s+/g, "")}`}>
-                        {site.phone2}
+                      <span className={styles.contactLabel}>Phone</span>
+                      <a href={`tel:${site.phone.replace(/\s+/g, "")}`}>
+                        {site.phone}
                       </a>
                     </div>
                     <div className={styles.contactRow}>
                       <span className={styles.contactLabel}>
-                        Landline Number
+                        WhatsApp
                       </span>
-                      <a href={`tel:${site.landline.replace(/\s+/g, "")}`}>
-                        {site.landline}
+                      <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer">
+                        Message us
                       </a>
                     </div>
                   </div>
@@ -104,7 +103,7 @@ export default function Contact() {
                   <Icon path="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                 </span>
                 <div>
-                  <div className={styles.cardLabel}>OFFICE LOCATION</div>
+                  <div className={styles.cardLabel}>SERVICE AREA</div>
                   <div className={styles.cardValue}>{site.address}</div>
                 </div>
               </div>
@@ -115,9 +114,9 @@ export default function Contact() {
           <Reveal delay={500} className={styles.mapColumn}>
             <div className={styles.mapHeader}>
               <div>
-                <h3 className={styles.mapTitle}>VISIT OUR OFFICE</h3>
+                <h3 className={styles.mapTitle}>DUBAI, UAE</h3>
                 <p className={styles.mapDesc}>
-                  Find {site.legalName} at our Karama office.
+                  Residential and commercial property services across Dubai.
                 </p>
               </div>
               <a
@@ -126,12 +125,12 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className={styles.mapLink}
               >
-                OPEN IN MAPS &rarr;
+                OPEN DUBAI MAP &rarr;
               </a>
             </div>
             <div className={styles.mapWrapper}>
               <iframe
-                src="https://maps.google.com/maps?q=Growbox+Group,+Hamsah+Complex,+Al+Karama,+Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Dubai,+United+Arab+Emirates&t=&z=11&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

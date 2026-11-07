@@ -1,9 +1,9 @@
 .footer {
-  background-color: var(--color-ink);
-  border-top: 1px solid color-mix(in srgb, var(--color-brass) 20%, transparent);
+  background-color: var(--color-surface-alt);
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
   padding-top: 4rem;
   padding-bottom: 4rem;
-  color: var(--color-parchment);
+  color: var(--color-navy);
 }
 
 .grid {
@@ -27,29 +27,32 @@
   }
 }
 
-.associateContainer {
+.serviceArea {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.associateImg {
-  width: 100%;
-  max-width: 140px;
-  height: auto;
-  margin-top: 1rem;
+.footerContactLink {
+  display: block;
+  margin-top: 0.5rem;
+  overflow-wrap: anywhere;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--color-navy) 78%, transparent);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-@media (min-width: 768px) {
-  .associateImg {
-    max-width: 200px;
-  }
+.footerContactLink:hover {
+  color: var(--color-accent);
 }
 
 .logoContainer {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .logoImg {
@@ -61,24 +64,36 @@
 .logoText {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .brandTitle {
   font-family: var(--font-display);
   font-size: 1.25rem;
+  line-height: 1.1;
+}
+
+.brandLegalName {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  color: color-mix(in srgb, var(--color-navy) 75%, transparent);
+  white-space: nowrap;
 }
 
 .legalName {
   margin-top: 0.75rem;
   max-width: 20rem;
   font-size: 0.875rem;
-  color: color-mix(in srgb, var(--color-parchment) 60%, transparent);
+  color: color-mix(in srgb, var(--color-navy) 75%, transparent);
 }
 
 .tagline {
   margin-top: 0.5rem;
   font-size: 0.75rem;
-  color: color-mix(in srgb, var(--color-parchment) 40%, transparent);
+  color: color-mix(in srgb, var(--color-navy) 65%, transparent);
 }
 
 .heading {
@@ -86,7 +101,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-brass);
+  color: var(--color-navy);
 }
 
 @media (min-width: 768px) {
@@ -107,19 +122,19 @@
 
 .link {
   font-size: 0.875rem;
-  color: color-mix(in srgb, var(--color-parchment) 70%, transparent);
+  color: color-mix(in srgb, var(--color-navy) 78%, transparent);
   transition: color 0.2s ease;
   text-decoration: none;
 }
 
 .link:hover {
-  color: var(--color-brass);
+  color: var(--color-accent);
 }
 
 .contactList {
   margin-top: 1rem;
   font-size: 0.875rem;
-  color: color-mix(in srgb, var(--color-parchment) 70%, transparent);
+  color: color-mix(in srgb, var(--color-navy) 78%, transparent);
 }
 
 .contactItem {
@@ -131,11 +146,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-top: 1px solid color-mix(in srgb, var(--color-parchment) 10%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--color-navy) 12%, transparent);
   padding-top: 1.5rem;
   font-family: var(--font-mono);
   font-size: 11px;
-  color: color-mix(in srgb, var(--color-parchment) 40%, transparent);
+  color: color-mix(in srgb, var(--color-navy) 65%, transparent);
 }
 
 @media (min-width: 768px) {

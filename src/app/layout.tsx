@@ -26,17 +26,17 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.shortName} | Interior Design & Technical Services, Dubai`,
+    default: `${site.shortName} | Property Maintenance & Technical Services, Dubai`,
     template: `%s | ${site.legalName}`,
   },
   description: site.description,
   keywords: [
-    "Interior Design Dubai",
-    "Fit-out Consultants UAE",
-    "Technical Services Contractor",
-    "Villa Landscaping Dubai",
-    "Commercial Fit-outs Dubai",
-    "Al Ejaba Al Sareea",
+    "Property Maintenance Dubai",
+    "Technical Services Dubai",
+    "Villa Maintenance Dubai",
+    "Modular Kitchens Dubai",
+    "Commercial Fit-Out Dubai",
+    "Wahat Al Daqa Technical Services",
   ],
   authors: [{ name: site.name }],
   creator: site.name,
@@ -87,22 +87,14 @@ export default function RootLayout({
     alternateName: site.shortName,
     description: site.description,
     url: site.url,
-    telephone: site.phone2,
+    telephone: site.phone,
     email: site.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: site.address,
       addressLocality: "Dubai",
       addressRegion: "Dubai",
       addressCountry: "AE",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "25.2443", // Al Karama
-      longitude: "55.3056",
-    },
-    sameAs: [site.instagram],
-    priceRange: "$$$",
     areaServed: {
       "@type": "City",
       name: "Dubai",

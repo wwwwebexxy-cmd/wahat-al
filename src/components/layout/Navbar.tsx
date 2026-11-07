@@ -21,9 +21,9 @@ export default function Navbar() {
       >
         <div className={styles.inner}>
           <a href="#home" className={styles.logo}>
-            <img src="/images/alejaba_logo_200x200.png" alt="Al Ejaba Logo" className={styles.logoImg} />
+            <img src="/images/wad-logo.webp" alt="Wahat Al Daqa Technical Services" className={styles.logoImg} />
             <div className={styles.logoText}>
-              {site.name}
+              <span className={styles.brandTitle}>{site.name}</span>
               <span className={styles.llc}>
                 TECHNICAL SERVICES L.L.C.
               </span>

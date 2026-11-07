@@ -54,7 +54,7 @@
 }
 
 .phoneBtn {
-  background-color: #8B2520; /* Dark red */
+  background-color: var(--color-navy);
 }
 
 .whatsappBtn {

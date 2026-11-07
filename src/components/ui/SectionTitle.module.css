@@ -22,11 +22,11 @@
 }
 
 .eyebrowDark {
-  color: var(--color-brass-light);
+  color: var(--color-accent-light);
 }
 
 .eyebrowLight {
-  color: var(--color-brass);
+  color: var(--color-accent);
 }
 
 .line {
@@ -49,9 +49,9 @@
 }
 
 .titleDark {
-  color: var(--color-parchment);
+  color: var(--color-surface);
 }
 
 .titleLight {
-  color: var(--color-ink);
+  color: var(--color-navy);
 }

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { site, navLinks } from '@/data/site';
+import { site } from '@/data/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseEntry = {
@@ -9,12 +9,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 1.0,
   };
 
-  const sectionEntries = navLinks.map((link) => ({
-    url: `${site.url}/${link.href}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
-
-  return [baseEntry, ...sectionEntries];
+  return [baseEntry];
 }
