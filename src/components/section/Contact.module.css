@@ -1,0 +1,190 @@
+.section {
+  background-color: var(--color-parchment);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.introText {
+  margin-top: 2rem;
+  max-width: 42rem;
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.625;
+  color: color-mix(in srgb, var(--color-ink) 70%, transparent);
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.125rem;
+  }
+}
+
+.contentGrid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.cardsColumn {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .cardsColumn {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardsColumn {
+    grid-column: span 7 / span 7;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  transition: all 0.5s ease;
+  height: 100%;
+}
+
+.iconWrapper {
+  color: var(--color-brass);
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: color-mix(in srgb, var(--color-ink) 60%, transparent);
+  margin-bottom: 0.5rem;
+}
+
+.cardValue {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: color-mix(in srgb, var(--color-ink) 80%, transparent);
+}
+
+.contactRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contactRow + .contactRow {
+  margin-top: 0.9rem;
+}
+
+.contactLabel {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: color-mix(in srgb, var(--color-ink) 65%, transparent);
+}
+
+.cardValue a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cardValue a:hover {
+  text-decoration: underline;
+}
+
+.mapColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .mapColumn {
+    grid-column: span 5 / span 5;
+  }
+}
+
+.mapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.mapTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
+}
+
+.mapDesc {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--color-ink) 60%, transparent);
+}
+
+.mapLink {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-brass);
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.mapLink:hover {
+  text-decoration: underline;
+}
+
+.mapWrapper {
+  flex-grow: 1;
+  min-height: 20rem;
+  border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
+  background-color: color-mix(in srgb, var(--color-ink) 5%, transparent);
+}

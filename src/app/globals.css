@@ -1,0 +1,115 @@
+
+:root {
+  /* Core Brand Colors derived from standard Architectural/Design palettes */
+  --color-parchment: #f4f0ec; /* Warm off-white background */
+  --color-ink: #72451d; /* Deep brown for text and dark sections */
+  --color-brass: #be995c; /* Premium gold/brass for buttons, accents, and lines */
+  --color-brass-light: #d3c3b0; /* Lighter brass for hover states */
+  --color-sand: #e6ddd2; /* Slight variation of parchment for alternating sections */
+  
+  /* Typography */
+  --font-display: "var(--font-fraunces)", serif;
+  --font-body: "var(--font-manrope)", sans-serif;
+  --font-mono: "var(--font-mono)", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  font-feature-settings: "ss01" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #72451d; /* ink */
+}
+::-webkit-scrollbar-thumb {
+  background: #be995c; /* brass */
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d3c3b0; /* brass-light */
+}
+
+::selection {
+  background-color: #be995c; /* brass */
+  color: #f4f0ec; /* parchment */
+}
+
+:focus-visible {
+  outline: 2px solid #be995c; /* brass */
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- Animations --- */
+@keyframes fade-in-up {
+  from { 
+    opacity: 0; 
+    transform: translateY(40px) scale(0.98);
+    filter: blur(10px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes loader-bar {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes scroll-indicator {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+/* Utility classes for scroll reveal */
+.reveal {
+  opacity: 0;
+  will-change: transform, opacity, filter;
+}
+.reveal.is-visible {
+  animation: fade-in-up 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Blueprint grid background for dark sections */
+.bg-grid {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

@@ -1,0 +1,147 @@
+.footer {
+  background-color: var(--color-ink);
+  border-top: 1px solid color-mix(in srgb, var(--color-brass) 20%, transparent);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: var(--color-parchment);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.brandSection {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .brandSection {
+    grid-column: span 1;
+  }
+}
+
+.associateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.associateImg {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .associateImg {
+    max-width: 200px;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoImg {
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.legalName {
+  margin-top: 0.75rem;
+  max-width: 20rem;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--color-parchment) 60%, transparent);
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: color-mix(in srgb, var(--color-parchment) 40%, transparent);
+}
+
+.heading {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-brass);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    letter-spacing: 0.25em;
+  }
+}
+
+.list {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--color-parchment) 70%, transparent);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-brass);
+}
+
+.contactList {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--color-parchment) 70%, transparent);
+}
+
+.contactItem {
+  margin-bottom: 0.5rem;
+}
+
+.bottomBar {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-parchment) 10%, transparent);
+  padding-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: color-mix(in srgb, var(--color-parchment) 40%, transparent);
+}
+
+@media (min-width: 768px) {
+  .bottomBar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

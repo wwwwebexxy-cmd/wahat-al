@@ -1,0 +1,239 @@
+.section {
+  background-color: var(--color-sand);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.introText {
+  margin-top: 2rem;
+  max-width: 48rem;
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.625;
+  color: color-mix(in srgb, var(--color-ink) 70%, transparent);
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.125rem;
+  }
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.serviceCard {
+  background-color: var(--color-ink);
+  border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
+  border-radius: 0.5rem;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.6s ease, border-color 0.6s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .serviceCard {
+    height: 450px;
+  }
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-brass);
+}
+
+.cardImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+.serviceCard:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.serviceCard:hover .imageOverlay {
+  opacity: 1;
+  background: rgba(0,0,0,0.7);
+}
+
+.cardHeader {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 2;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+  transform: translateY(0);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-parchment);
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.serviceCard:hover .cardHeader {
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cardReveal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: color-mix(in srgb, var(--color-ink) 95%, transparent);
+  color: var(--color-parchment);
+  padding: 2rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.serviceCard:hover .cardReveal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cardHeaderReveal {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-brass) 30%, transparent);
+  padding-bottom: 1rem;
+}
+
+.titleReveal {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-brass);
+  line-height: 1.2;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--color-parchment) 90%, transparent);
+  margin-bottom: 1.5rem;
+}
+
+.pointsList {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.point {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-parchment);
+  position: relative;
+  padding-left: 1.25rem;
+  line-height: 1.4;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  background-color: var(--color-brass);
+  border-radius: 50%;
+}
+
+.cardBody::-webkit-scrollbar {
+  width: 4px;
+}
+.cardBody::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cardBody::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-brass) 60%, transparent);
+  border-radius: 2px;
+}
